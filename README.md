@@ -1,4 +1,3 @@
-````markdown
 # 🚀 VijayX StartupWin
 
 A modern AI-powered startup valuation web application that helps founders estimate their startup's worth in minutes. Enter your startup details and generate an investor-style valuation report with financial insights, startup health scores, risks, opportunities, and personalized recommendations.
@@ -61,6 +60,8 @@ The AI generates:
 - 🔴 Risks
 - 💡 Recommendations
 
+The application combines its valuation engine with AI-powered analysis to provide startup-specific insights.
+
 ---
 
 ## 🛠️ Tech Stack
@@ -92,11 +93,13 @@ npm run dev
 
 ## 🔑 Environment Variables
 
-Create a `.env` file and add your OpenRouter API key:
+Create a `.env` file in the project root:
 
 ```env
 OPENROUTER_API_KEY=your_api_key_here
 ```
+
+Refer to `.env.example` for the required environment variables.
 
 > ⚠️ Never commit your actual `.env` file or API keys to GitHub.
 
@@ -112,7 +115,13 @@ VijayStarupX/
 ├── server/
 │   └── index.js
 ├── src/
+│   ├── assets/
 │   ├── components/
+│   │   ├── form/
+│   │   ├── landing/
+│   │   ├── layout/
+│   │   ├── results/
+│   │   └── ui/
 │   ├── lib/
 │   ├── pages/
 │   └── types/
@@ -122,6 +131,7 @@ VijayStarupX/
 │   └── ResultsPage.png
 ├── .env.example
 ├── .gitignore
+├── index.html
 ├── package.json
 ├── README.md
 └── vite.config.ts
@@ -131,7 +141,7 @@ VijayStarupX/
 
 ## ⚙️ Development
 
-Run frontend and backend together:
+Run the frontend and backend together:
 
 ```bash
 npm run dev:all
@@ -161,6 +171,12 @@ npm run dev:server
 
 ---
 
+## 🎯 Project Purpose
+
+VijayX StartupWin is designed to help startup founders understand their business position, estimate their startup valuation, identify potential risks and opportunities, and improve their investor readiness.
+
+---
+
 ## 👨‍💻 Author
 
 **Vijaya Krishnan J**
@@ -170,13 +186,3 @@ npm run dev:server
 ---
 
 ⭐ If you found this project useful, consider giving it a star!
-
-````
-
-### Then save and run ONLY these:
-
-```powershell
-git add README.md
-git commit -m "Fix README and screenshots"
-git push
-````
