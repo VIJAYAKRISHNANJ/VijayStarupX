@@ -1,14 +1,3 @@
-Yes 👍 Your screenshot confirms that the **`ScreenShots` folder is now correctly inside your Trae project**, with all 3 images:
-
-```text
-ScreenShots/
-├── LandingPage.png
-├── PredictPage.png
-└── ResultsPage.png
-```
-
-So now you can use this **complete README**. Open `README.md` in Trae, replace everything, and paste this:
-
 ````markdown
 # 🚀 VijayX StartupWin
 
@@ -51,9 +40,8 @@ A modern AI-powered startup valuation web application that helps founders estima
 - ☁️ Technology and scalability assessment
 - 💼 Funding-stage prediction
 - ⚠️ Risk-level assessment
-- 💡 Strengths and weaknesses analysis
 - 🤖 AI-powered startup insights
-- 🚀 AI-generated recommendations
+- 💡 AI-generated recommendations
 - 📊 Interactive valuation charts
 - 📈 Growth trajectory visualization
 - 🖨️ Downloadable valuation report
@@ -72,8 +60,6 @@ The AI generates:
 - 🚀 Opportunities
 - 🔴 Risks
 - 💡 Recommendations
-
-The startup valuation is calculated using the application's valuation engine, while AI is used to provide personalized insights and recommendations based on the startup's submitted information.
 
 ---
 
@@ -106,13 +92,11 @@ npm run dev
 
 ## 🔑 Environment Variables
 
-Create a `.env` file in the project root and configure your OpenRouter API key:
+Create a `.env` file and add your OpenRouter API key:
 
 ```env
 OPENROUTER_API_KEY=your_api_key_here
 ```
-
-Refer to `.env.example` for the required environment variables.
 
 > ⚠️ Never commit your actual `.env` file or API keys to GitHub.
 
@@ -128,13 +112,7 @@ VijayStarupX/
 ├── server/
 │   └── index.js
 ├── src/
-│   ├── assets/
 │   ├── components/
-│   │   ├── form/
-│   │   ├── landing/
-│   │   ├── layout/
-│   │   ├── results/
-│   │   └── ui/
 │   ├── lib/
 │   ├── pages/
 │   └── types/
@@ -144,7 +122,6 @@ VijayStarupX/
 │   └── ResultsPage.png
 ├── .env.example
 ├── .gitignore
-├── index.html
 ├── package.json
 ├── README.md
 └── vite.config.ts
@@ -154,21 +131,19 @@ VijayStarupX/
 
 ## ⚙️ Development
 
-Start the frontend and backend together:
+Run frontend and backend together:
 
 ```bash
 npm run dev:all
 ```
 
-Or run them separately:
-
-### Frontend
+Frontend only:
 
 ```bash
 npm run dev
 ```
 
-### Backend
+Backend only:
 
 ```bash
 npm run dev:server
@@ -178,26 +153,11 @@ npm run dev:server
 
 ## 📊 How It Works
 
-1. 📝 **Enter Startup Information**
-   Provide company, team, financial, market, product, growth, and customer information.
-
-2. ⚙️ **Valuation Processing**
-   VijayX analyzes the submitted startup data using its valuation engine.
-
-3. 🤖 **AI Analysis**
-   The AI evaluates the startup information and generates personalized insights.
-
-4. 📊 **View Results**
-   Receive an estimated valuation, startup health score, growth score, investor readiness, risks, opportunities, and recommendations.
-
-5. 📄 **Generate Report**
-   View and download the startup valuation report.
-
----
-
-## 🎯 Project Purpose
-
-VijayX StartupWin is designed as a startup analysis and valuation platform that helps founders understand their business position and identify areas that could improve their investment readiness.
+1. 📝 Enter startup information
+2. ⚙️ Analyze the startup using the valuation engine
+3. 🤖 Generate personalized AI insights
+4. 📊 View the valuation and startup health report
+5. 📄 Download the valuation report
 
 ---
 
@@ -213,20 +173,10 @@ VijayX StartupWin is designed as a startup analysis and valuation platform that 
 
 ````
 
-### After pasting
-
-Save `README.md`, then in your Trae terminal run:
+### Then save and run ONLY these:
 
 ```powershell
 git add README.md
-git commit -m "Update project README"
+git commit -m "Fix README and screenshots"
 git push
 ````
-
-Since your screenshot shows the terminal is already successfully pushing to:
-
-```text
-https://github.com/VIJAYAKRISHNANJ/VijayStarupX.git
-```
-
-you **do not need `--force`**. Just normal `git push` is enough.
